@@ -97,7 +97,7 @@ Validation parameters for SF10, generated with Umbra:
 * https://datasets.ldbcouncil.org/bi-pre-audit/bi-sf10000-composite-projected-fk.tar.zst.020
 * https://datasets.ldbcouncil.org/bi-pre-audit/bi-sf10000-composite-projected-fk.tar.zst.021
 
-#### Compressed CSVs in the composite-projected CSV format with quotes and without headers
+#### Compressed CSVs in the composite-projected-fk CSV format with quotes and without headers
 
 **Checksums:** https://datasets.ldbcouncil.org/bi-pre-audit/bi-composite-projected-fk-with-quotes-without-headers-md5sums.tar.zst
 
