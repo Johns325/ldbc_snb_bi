@@ -1,0 +1,51 @@
+query,parameter_index,parameters,results,time_seconds
+bi14b,1,"{""country1"": ""Azerbaijan"", ""country2"": ""South_Korea""}","[{""person1.id"": 24189255811081, ""person2.id"": 13194139533514, ""city1.name"": ""Baku"", ""score"": 5}]",0.005990
+bi14b,2,"{""country1"": ""Austria"", ""country2"": ""Spain""}",[],0.001855
+bi14b,3,"{""country1"": ""Azerbaijan"", ""country2"": ""Taiwan""}","[{""person1.id"": 24189255811081, ""person2.id"": 21990232560753, ""city1.name"": ""Baku"", ""score"": 16}]",0.004856
+bi14b,4,"{""country1"": ""Azerbaijan"", ""country2"": ""Honduras""}","[{""person1.id"": 24189255811081, ""person2.id"": 2199023265046, ""city1.name"": ""Baku"", ""score"": 15}]",0.005176
+bi14b,5,"{""country1"": ""Belgium"", ""country2"": ""Turkey""}","[{""person1.id"": 26388279074690, ""person2.id"": 21990232563456, ""city1.name"": ""Antwerp"", ""score"": 16}]",0.006849
+bi14b,6,"{""country1"": ""Austria"", ""country2"": ""France""}","[{""person1.id"": 6597069768135, ""person2.id"": 24189255814676, ""city1.name"": ""Vienna"", ""score"": 16}]",0.005784
+bi14b,7,"{""country1"": ""Azerbaijan"", ""country2"": ""Belgium""}","[{""person1.id"": 24189255811081, ""person2.id"": 6597069773428, ""city1.name"": ""Baku"", ""score"": 16}]",0.005547
+bi14b,8,"{""country1"": ""Angola"", ""country2"": ""Hungary""}","[{""person1.id"": 26388279074946, ""person2.id"": 26388279070147, ""city1.name"": ""Luanda"", ""score"": 10}]",0.012949
+bi14b,9,"{""country1"": ""Austria"", ""country2"": ""Morocco""}",[],0.001955
+bi14b,10,"{""country1"": ""Belgium"", ""country2"": ""Peru""}",[],0.001704
+bi14b,11,"{""country1"": ""Azerbaijan"", ""country2"": ""Portugal""}","[{""person1.id"": 24189255811081, ""person2.id"": 24189255815274, ""city1.name"": ""Baku"", ""score"": 16}]",0.007872
+bi14b,12,"{""country1"": ""Austria"", ""country2"": ""Oman""}","[{""person1.id"": 24189255814562, ""person2.id"": 6510, ""city1.name"": ""Vienna"", ""score"": 6}]",0.005694
+bi14b,13,"{""country1"": ""Azerbaijan"", ""country2"": ""Slovenia""}","[{""person1.id"": 6597069774915, ""person2.id"": 4398046521593, ""city1.name"": ""Baku"", ""score"": 16}]",0.005621
+bi14b,14,"{""country1"": ""Austria"", ""country2"": ""Venezuela""}",[],0.001763
+bi14b,15,"{""country1"": ""Azerbaijan"", ""country2"": ""Poland""}","[{""person1.id"": 30786325579305, ""person2.id"": 2199023263408, ""city1.name"": ""Baku"", ""score"": 15}]",0.010563
+bi14b,16,"{""country1"": ""Azerbaijan"", ""country2"": ""Sri_Lanka""}",[],0.001810
+bi14b,17,"{""country1"": ""Azerbaijan"", ""country2"": ""Northern_Ireland""}",[],0.001495
+bi14b,18,"{""country1"": ""Azerbaijan"", ""country2"": ""Indonesia""}","[{""person1.id"": 21990232556570, ""person2.id"": 19791209301605, ""city1.name"": ""Baku"", ""score"": 16}]",0.006527
+bi14b,19,"{""country1"": ""Austria"", ""country2"": ""Bosnia_and_Herzegovina""}",[],0.001915
+bi14b,20,"{""country1"": ""Austria"", ""country2"": ""Azerbaijan""}",[],0.001516
+bi14b,21,"{""country1"": ""Azerbaijan"", ""country2"": ""Greece""}","[{""person1.id"": 8410, ""person2.id"": 5694, ""city1.name"": ""Baku"", ""score"": 16}]",0.005974
+bi14b,22,"{""country1"": ""Bolivia"", ""country2"": ""Algeria""}","[{""person1.id"": 28587302325080, ""person2.id"": 28587302326226, ""city1.name"": ""Carmen_Pampa"", ""score"": 15}]",0.019351
+bi14b,23,"{""country1"": ""Belgium"", ""country2"": ""Ukraine""}","[{""person1.id"": 26388279072135, ""person2.id"": 19791209305252, ""city1.name"": ""Antwerp"", ""score"": 5}]",0.006970
+bi14b,24,"{""country1"": ""Austria"", ""country2"": ""Australia""}",[],0.001566
+bi14b,25,"{""country1"": ""Bolivia"", ""country2"": ""Egypt""}","[{""person1.id"": 28587302325080, ""person2.id"": 6597069776446, ""city1.name"": ""Carmen_Pampa"", ""score"": 2}]",0.011349
+bi14b,26,"{""country1"": ""Angola"", ""country2"": ""Vietnam""}","[{""person1.id"": 2199023259496, ""person2.id"": 35184372096829, ""city1.name"": ""Luanda"", ""score"": 1}]",0.008258
+bi14b,27,"{""country1"": ""Belgium"", ""country2"": ""Sri_Lanka""}",[],0.001933
+bi14b,28,"{""country1"": ""Azerbaijan"", ""country2"": ""Bulgaria""}","[{""person1.id"": 24189255811081, ""person2.id"": 17592186045373, ""city1.name"": ""Baku"", ""score"": 6}]",0.005673
+bi14b,29,"{""country1"": ""Azerbaijan"", ""country2"": ""Czech_Republic""}","[{""person1.id"": 28587302330248, ""person2.id"": 28587302324317, ""city1.name"": ""Baku"", ""score"": 2}]",0.004040
+bi14b,30,"{""country1"": ""Azerbaijan"", ""country2"": ""Thailand""}","[{""person1.id"": 28587302330248, ""person2.id"": 6597069770822, ""city1.name"": ""Baku"", ""score"": 15}]",0.014349
+bi14b,31,"{""country1"": ""Azerbaijan"", ""country2"": ""Democratic_Republic_of_the_Congo""}",[],0.001703
+bi14b,32,"{""country1"": ""Austria"", ""country2"": ""Kazakhstan""}","[{""person1.id"": 24189255813538, ""person2.id"": 26388279070251, ""city1.name"": ""Vienna"", ""score"": 2}]",0.007221
+bi14b,33,"{""country1"": ""Austria"", ""country2"": ""Colombia""}","[{""person1.id"": 28587302329472, ""person2.id"": 35184372092691, ""city1.name"": ""Vienna"", ""score"": 2}]",0.010182
+bi14b,34,"{""country1"": ""Azerbaijan"", ""country2"": ""Canada""}","[{""person1.id"": 24189255811081, ""person2.id"": 24189255812716, ""city1.name"": ""Baku"", ""score"": 2}]",0.005008
+bi14b,35,"{""country1"": ""Azerbaijan"", ""country2"": ""Ethiopia""}",[],0.001587
+bi14b,36,"{""country1"": ""Bolivia"", ""country2"": ""Afghanistan""}","[{""person1.id"": 28587302325080, ""person2.id"": 6597069766846, ""city1.name"": ""Carmen_Pampa"", ""score"": 5}]",0.005178
+bi14b,37,"{""country1"": ""Azerbaijan"", ""country2"": ""Senegal""}","[{""person1.id"": 8410, ""person2.id"": 10310, ""city1.name"": ""Baku"", ""score"": 16}]",0.003616
+bi14b,38,"{""country1"": ""Azerbaijan"", ""country2"": ""Netherlands""}","[{""person1.id"": 21990232556570, ""person2.id"": 19791209309084, ""city1.name"": ""Baku"", ""score"": 15}]",0.017128
+bi14b,39,"{""country1"": ""Angola"", ""country2"": ""Wales""}","[{""person1.id"": 26388279074946, ""person2.id"": 24189255819086, ""city1.name"": ""Luanda"", ""score"": 15}]",0.006276
+bi14b,40,"{""country1"": ""Angola"", ""country2"": ""Brazil""}","[{""person1.id"": 2199023259496, ""person2.id"": 2199023256462, ""city1.name"": ""Luanda"", ""score"": 12}]",0.015533
+bi14b,41,"{""country1"": ""Azerbaijan"", ""country2"": ""Bosnia_and_Herzegovina""}","[{""person1.id"": 24189255811081, ""person2.id"": 13194139537007, ""city1.name"": ""Baku"", ""score"": 6}]",0.006725
+bi14b,42,"{""country1"": ""Austria"", ""country2"": ""Cuba""}","[{""person1.id"": 24189255814562, ""person2.id"": 17592186045381, ""city1.name"": ""Vienna"", ""score"": 15}]",0.005946
+bi14b,43,"{""country1"": ""Austria"", ""country2"": ""Malaysia""}","[{""person1.id"": 28587302329472, ""person2.id"": 24189255817701, ""city1.name"": ""Vienna"", ""score"": 6}]",0.004127
+bi14b,44,"{""country1"": ""Austria"", ""country2"": ""Canada""}",[],0.001506
+bi14b,45,"{""country1"": ""Bolivia"", ""country2"": ""Canada""}","[{""person1.id"": 2199023260638, ""person2.id"": 13194139538512, ""city1.name"": ""Carmen_Pampa"", ""score"": 15}]",0.005937
+bi14b,46,"{""country1"": ""Azerbaijan"", ""country2"": ""United_Kingdom""}","[{""person1.id"": 21990232556570, ""person2.id"": 32985348833564, ""city1.name"": ""Baku"", ""score"": 1}]",0.004765
+bi14b,47,"{""country1"": ""Austria"", ""country2"": ""South_Korea""}",[],0.001746
+bi14b,48,"{""country1"": ""Bolivia"", ""country2"": ""Burma""}","[{""person1.id"": 19791209300792, ""person2.id"": 17592186047102, ""city1.name"": ""Carmen_Pampa"", ""score"": 6}]",0.004179
+bi14b,49,"{""country1"": ""Afghanistan"", ""country2"": ""Zambia""}","[{""person1.id"": 15393162798860, ""person2.id"": 21990232561284, ""city1.name"": ""Lashkar_Gah"", ""score"": 16}]",0.006212
+bi14b,50,"{""country1"": ""Austria"", ""country2"": ""Yemen""}","[{""person1.id"": 24189255814562, ""person2.id"": 37383395353984, ""city1.name"": ""Vienna"", ""score"": 1}]",0.004436

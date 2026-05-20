@@ -1,0 +1,401 @@
+query,parameter_index,parameters,results,time_seconds
+bi17,1,"{""tag"": ""Cosmic_Egg"", ""delta"": ""12""}",[],0.061754
+bi17,2,"{""tag"": ""MantaRay"", ""delta"": ""13""}",[],0.020315
+bi17,3,"{""tag"": ""The_Archives_Vol._1_1963–1972"", ""delta"": ""10""}",[],0.991937
+bi17,4,"{""tag"": ""Kissin_U"", ""delta"": ""12""}","[{""person1.id"": 15393162791639, ""messageCount"": 1}]",0.031045
+bi17,5,"{""tag"": ""Change_Clothes"", ""delta"": ""12""}","[{""person1.id"": 15393162792105, ""messageCount"": 2}, {""person1.id"": 24189255819865, ""messageCount"": 1}]",0.096827
+bi17,6,"{""tag"": ""Love_It_When_You_Call"", ""delta"": ""12""}",[],0.036396
+bi17,7,"{""tag"": ""Drastic_Measures"", ""delta"": ""16""}",[],0.009579
+bi17,8,"{""tag"": ""Take_Me_on_the_Floor"", ""delta"": ""13""}",[],0.015545
+bi17,9,"{""tag"": ""The_Roof_Is_on_Fire"", ""delta"": ""10""}",[],0.027855
+bi17,10,"{""tag"": ""The_Dangermen_Sessions_Vol._1"", ""delta"": ""10""}",[],0.019175
+bi17,11,"{""tag"": ""Lean_into_It"", ""delta"": ""16""}",[],0.021074
+bi17,12,"{""tag"": ""Check_Yo_Self"", ""delta"": ""10""}",[],0.025726
+bi17,13,"{""tag"": ""Everyway_That_I_Can"", ""delta"": ""11""}","[{""person1.id"": 28587302326226, ""messageCount"": 1}]",0.023878
+bi17,14,"{""tag"": ""Wang_Dang_Doodle"", ""delta"": ""15""}","[{""person1.id"": 2199023265475, ""messageCount"": 1}, {""person1.id"": 6597069776896, ""messageCount"": 1}]",0.024422
+bi17,15,"{""tag"": ""Brighten_the_Corners"", ""delta"": ""9""}",[],0.018981
+bi17,16,"{""tag"": ""Diego_Rivera"", ""delta"": ""11""}",[],0.003783
+bi17,17,"{""tag"": ""He_Said_She_Said"", ""delta"": ""12""}","[{""person1.id"": 2199023263911, ""messageCount"": 1}, {""person1.id"": 17592186053840, ""messageCount"": 1}]",0.030497
+bi17,18,"{""tag"": ""Heart_On"", ""delta"": ""9""}","[{""person1.id"": 15393162799448, ""messageCount"": 1}]",0.018844
+bi17,19,"{""tag"": ""Cualquier_Día"", ""delta"": ""13""}",[],0.011547
+bi17,20,"{""tag"": ""How_I_Could_Just_Kill_a_Man"", ""delta"": ""9""}",[],0.008455
+bi17,21,"{""tag"": ""Nothing_in_This_World"", ""delta"": ""12""}","[{""person1.id"": 13194139539096, ""messageCount"": 1}, {""person1.id"": 19791209304987, ""messageCount"": 1}]",0.011579
+bi17,22,"{""tag"": ""Indian_Outlaw"", ""delta"": ""11""}",[],0.018294
+bi17,23,"{""tag"": ""Little_T&A"", ""delta"": ""12""}","[{""person1.id"": 13194139534157, ""messageCount"": 1}]",0.009647
+bi17,24,"{""tag"": ""Year_of_the_Dog..._Again"", ""delta"": ""9""}",[],0.010828
+bi17,25,"{""tag"": ""Hendrix_in_the_West"", ""delta"": ""8""}","[{""person1.id"": 28587302329647, ""messageCount"": 1}]",0.018443
+bi17,26,"{""tag"": ""Identified"", ""delta"": ""13""}",[],0.012536
+bi17,27,"{""tag"": ""Me_and_Mr._Johnson"", ""delta"": ""13""}",[],0.011899
+bi17,28,"{""tag"": ""The_Matrix_Reloaded:_The_Album"", ""delta"": ""16""}","[{""person1.id"": 15393162796545, ""messageCount"": 1}, {""person1.id"": 26388279071146, ""messageCount"": 1}]",0.011719
+bi17,29,"{""tag"": ""Metal_Massacre"", ""delta"": ""13""}",[],0.009481
+bi17,30,"{""tag"": ""Jeanny"", ""delta"": ""9""}","[{""person1.id"": 8796093027094, ""messageCount"": 1}]",0.014894
+bi17,31,"{""tag"": ""Balls_to_the_Wall"", ""delta"": ""16""}",[],0.009343
+bi17,32,"{""tag"": ""If_Your_Girl_Only_Knew"", ""delta"": ""10""}",[],0.009751
+bi17,33,"{""tag"": ""II_Trill"", ""delta"": ""12""}",[],0.012269
+bi17,34,"{""tag"": ""Please_Remember_Me"", ""delta"": ""11""}",[],0.011109
+bi17,35,"{""tag"": ""Hickory_Wind"", ""delta"": ""10""}","[{""person1.id"": 24189255814629, ""messageCount"": 1}]",0.008132
+bi17,36,"{""tag"": ""Give_Me_Convenience_or_Give_Me_Death"", ""delta"": ""13""}",[],0.007212
+bi17,37,"{""tag"": ""In_the_Spirit_of_Things"", ""delta"": ""12""}",[],0.010412
+bi17,38,"{""tag"": ""Hannah_Montana_Forever"", ""delta"": ""12""}",[],0.012006
+bi17,39,"{""tag"": ""Cheap_Trick_at_Budokan"", ""delta"": ""8""}",[],0.009871
+bi17,40,"{""tag"": ""Accident_of_Birth"", ""delta"": ""10""}",[],0.007815
+bi17,41,"{""tag"": ""Attack_of_the_Grey_Lantern"", ""delta"": ""16""}",[],0.008904
+bi17,42,"{""tag"": ""I_Am_the_Night"", ""delta"": ""8""}",[],0.009138
+bi17,43,"{""tag"": ""A_Legal_Matter"", ""delta"": ""10""}",[],0.009878
+bi17,44,"{""tag"": ""Road_to_Nowhere"", ""delta"": ""13""}",[],0.008027
+bi17,45,"{""tag"": ""Conspiracy_of_One"", ""delta"": ""15""}","[{""person1.id"": 8796093025329, ""messageCount"": 1}, {""person1.id"": 19791209306686, ""messageCount"": 1}, {""person1.id"": 24189255819865, ""messageCount"": 1}]",0.010414
+bi17,46,"{""tag"": ""Hyæna"", ""delta"": ""8""}",[],0.008678
+bi17,47,"{""tag"": ""Brand_New_Man"", ""delta"": ""16""}",[],0.006226
+bi17,48,"{""tag"": ""On_Top_of_Our_Game"", ""delta"": ""12""}",[],0.007682
+bi17,49,"{""tag"": ""¿Dónde_Estás_Corazón?"", ""delta"": ""13""}",[],0.010668
+bi17,50,"{""tag"": ""Catch_You"", ""delta"": ""12""}",[],58.140613
+bi17,51,"{""tag"": ""Flick_of_the_Switch"", ""delta"": ""16""}",[],0.030095
+bi17,52,"{""tag"": ""Oracular_Spectacular"", ""delta"": ""10""}",[],0.005527
+bi17,53,"{""tag"": ""Say_What_You_Want"", ""delta"": ""15""}","[{""person1.id"": 10995116286648, ""messageCount"": 1}]",0.010263
+bi17,54,"{""tag"": ""I._M._Pei"", ""delta"": ""15""}",[],0.007392
+bi17,55,"{""tag"": ""Intensities_in_10_Cities"", ""delta"": ""14""}",[],0.010525
+bi17,56,"{""tag"": ""Slave_to_the_Grind"", ""delta"": ""12""}",[],0.009915
+bi17,57,"{""tag"": ""Bang_Bang_Bang"", ""delta"": ""12""}",[],0.009250
+bi17,58,"{""tag"": ""The_Slider"", ""delta"": ""13""}",[],0.008243
+bi17,59,"{""tag"": ""Lovelight"", ""delta"": ""14""}",[],0.005965
+bi17,60,"{""tag"": ""Hope_Is_Important"", ""delta"": ""12""}",[],0.005776
+bi17,61,"{""tag"": ""The_Stability_EP"", ""delta"": ""10""}",[],0.005541
+bi17,62,"{""tag"": ""Colby_O"", ""delta"": ""12""}","[{""person1.id"": 10349, ""messageCount"": 1}, {""person1.id"": 2199023261649, ""messageCount"": 1}, {""person1.id"": 8796093032132, ""messageCount"": 1}, {""person1.id"": 15393162797453, ""messageCount"": 1}, {""person1.id"": 19791209300626, ""messageCount"": 1}]",0.010614
+bi17,63,"{""tag"": ""Butchered_at_Birth"", ""delta"": ""16""}",[],0.007709
+bi17,64,"{""tag"": ""Fool_in_the_Rain"", ""delta"": ""12""}","[{""person1.id"": 4398046520256, ""messageCount"": 1}, {""person1.id"": 6597069774600, ""messageCount"": 1}, {""person1.id"": 10995116286003, ""messageCount"": 1}]",0.007396
+bi17,65,"{""tag"": ""Terry_Wogan"", ""delta"": ""11""}",[],0.004523
+bi17,66,"{""tag"": ""Labour_of_Lust"", ""delta"": ""8""}",[],0.006709
+bi17,67,"{""tag"": ""Desolation_Boulevard"", ""delta"": ""16""}",[],0.007720
+bi17,68,"{""tag"": ""Drive_Slow"", ""delta"": ""13""}","[{""person1.id"": 7427, ""messageCount"": 1}, {""person1.id"": 2199023259027, ""messageCount"": 1}]",0.007102
+bi17,69,"{""tag"": ""Bigger_than_the_Devil"", ""delta"": ""9""}",[],0.007233
+bi17,70,"{""tag"": ""Laugh_Now,_Cry_Later"", ""delta"": ""13""}",[],0.010422
+bi17,71,"{""tag"": ""Little_Arrows"", ""delta"": ""13""}",[],0.005701
+bi17,72,"{""tag"": ""Aphex_Twin"", ""delta"": ""15""}",[],0.005121
+bi17,73,"{""tag"": ""Grave_Disorder"", ""delta"": ""10""}",[],0.007165
+bi17,74,"{""tag"": ""Alma_Caribeña"", ""delta"": ""16""}",[],0.004771
+bi17,75,"{""tag"": ""Hyper_Music/Feeling_Good"", ""delta"": ""11""}",[],0.009056
+bi17,76,"{""tag"": ""Morning_After_Dark"", ""delta"": ""12""}",[],0.010372
+bi17,77,"{""tag"": ""Doremi_Fasol_Latido"", ""delta"": ""13""}",[],0.009686
+bi17,78,"{""tag"": ""Hourly,_Daily"", ""delta"": ""11""}",[],0.010522
+bi17,79,"{""tag"": ""Cucumber_Castle"", ""delta"": ""8""}",[],0.009081
+bi17,80,"{""tag"": ""Grow_Old_with_Me"", ""delta"": ""15""}",[],0.006421
+bi17,81,"{""tag"": ""Language._Sex._Violence._Other?"", ""delta"": ""12""}",[],0.004459
+bi17,82,"{""tag"": ""Coming_Undone"", ""delta"": ""11""}",[],0.007172
+bi17,83,"{""tag"": ""Underdogs"", ""delta"": ""11""}",[],0.011906
+bi17,84,"{""tag"": ""Try_It_Baby"", ""delta"": ""8""}",[],0.007102
+bi17,85,"{""tag"": ""Dejarte_de_Amar"", ""delta"": ""11""}",[],0.009944
+bi17,86,"{""tag"": ""Cygnus_X-1_duology"", ""delta"": ""11""}",[],0.008139
+bi17,87,"{""tag"": ""Get_Close"", ""delta"": ""11""}",[],0.010852
+bi17,88,"{""tag"": ""All_My_Rowdy_Friends_Are_Coming_Over_Tonight"", ""delta"": ""11""}","[{""person1.id"": 6597069769448, ""messageCount"": 1}]",0.007799
+bi17,89,"{""tag"": ""Mr._Soul"", ""delta"": ""12""}",[],0.012403
+bi17,90,"{""tag"": ""Lady_Samantha"", ""delta"": ""14""}","[{""person1.id"": 2199023260685, ""messageCount"": 1}, {""person1.id"": 4398046520667, ""messageCount"": 1}]",0.008582
+bi17,91,"{""tag"": ""Attak"", ""delta"": ""14""}",[],0.005590
+bi17,92,"{""tag"": ""Fate_of_Nations"", ""delta"": ""15""}","[{""person1.id"": 24189255814562, ""messageCount"": 1}]",0.008242
+bi17,93,"{""tag"": ""Suga_Suga"", ""delta"": ""12""}",[],0.006191
+bi17,94,"{""tag"": ""A_White_Sport_Coat"", ""delta"": ""16""}","[{""person1.id"": 2199023255557, ""messageCount"": 1}, {""person1.id"": 8796093028274, ""messageCount"": 1}]",0.008103
+bi17,95,"{""tag"": ""Nothing_as_It_Seems"", ""delta"": ""13""}",[],0.007755
+bi17,96,"{""tag"": ""20_Years_of_Jethro_Tull"", ""delta"": ""11""}",[],0.005954
+bi17,97,"{""tag"": ""Face_Dances"", ""delta"": ""16""}",[],0.006815
+bi17,98,"{""tag"": ""Mario_Ančić"", ""delta"": ""15""}",[],0.002191
+bi17,99,"{""tag"": ""Pigs_on_the_Wing"", ""delta"": ""14""}",[],0.008689
+bi17,100,"{""tag"": ""Age_to_Age"", ""delta"": ""9""}","[{""person1.id"": 13194139540547, ""messageCount"": 1}]",0.006910
+bi17,101,"{""tag"": ""Fun_Trick_Noisemaker"", ""delta"": ""8""}",[],0.008311
+bi17,102,"{""tag"": ""Try_Whistling_This"", ""delta"": ""15""}",[],0.008023
+bi17,103,"{""tag"": ""Chinese_Rocks"", ""delta"": ""15""}",[],59.558887
+bi17,104,"{""tag"": ""Fables_from_a_Mayfly:_What_I_Tell_You_Three_Times_Is_True"", ""delta"": ""15""}",[],0.009778
+bi17,105,"{""tag"": ""Lean_wit_It,_Rock_wit_It"", ""delta"": ""10""}",[],0.008291
+bi17,106,"{""tag"": ""Eli_and_the_Thirteenth_Confession"", ""delta"": ""16""}","[{""person1.id"": 6597069774812, ""messageCount"": 1}, {""person1.id"": 13194139538540, ""messageCount"": 1}]",0.030424
+bi17,107,"{""tag"": ""V_Deep"", ""delta"": ""13""}",[],0.008162
+bi17,108,"{""tag"": ""Las_Palabras_de_Amor"", ""delta"": ""16""}",[],0.006782
+bi17,109,"{""tag"": ""Comes_a_Time"", ""delta"": ""9""}",[],0.005374
+bi17,110,"{""tag"": ""George_Grey"", ""delta"": ""13""}",[],0.007122
+bi17,111,"{""tag"": ""MTV_Unplugged:_Korn"", ""delta"": ""16""}",[],0.005357
+bi17,112,"{""tag"": ""Heaven_Up_Here"", ""delta"": ""14""}","[{""person1.id"": 21990232556039, ""messageCount"": 1}, {""person1.id"": 32985348841739, ""messageCount"": 1}]",0.011710
+bi17,113,"{""tag"": ""Alona_Bondarenko"", ""delta"": ""10""}",[],0.005908
+bi17,114,"{""tag"": ""Everything_Is_Wrong"", ""delta"": ""10""}",[],0.007888
+bi17,115,"{""tag"": ""Crüe_Fest"", ""delta"": ""13""}",[],0.007304
+bi17,116,"{""tag"": ""Cobrastyle"", ""delta"": ""12""}",[],0.013609
+bi17,117,"{""tag"": ""Rhythms_del_Mundo"", ""delta"": ""9""}",[],0.007943
+bi17,118,"{""tag"": ""Hold_You_Down"", ""delta"": ""9""}",[],0.010402
+bi17,119,"{""tag"": ""Heisei_Fūzoku"", ""delta"": ""8""}","[{""person1.id"": 6597069774399, ""messageCount"": 1}]",0.010610
+bi17,120,"{""tag"": ""The_Man_with_the_Horn"", ""delta"": ""9""}",[],0.008951
+bi17,121,"{""tag"": ""I_Luv_Your_Girl"", ""delta"": ""12""}",[],0.008429
+bi17,122,"{""tag"": ""Difficult_to_Cure"", ""delta"": ""9""}",[],0.006853
+bi17,123,"{""tag"": ""The_Shock_of_the_Lightning"", ""delta"": ""10""}",[],0.004944
+bi17,124,"{""tag"": ""Break_Every_Rule"", ""delta"": ""12""}",[],0.006222
+bi17,125,"{""tag"": ""Wu-Massacre"", ""delta"": ""10""}",[],0.008235
+bi17,126,"{""tag"": ""Commit_This_to_Memory"", ""delta"": ""9""}",[],0.006572
+bi17,127,"{""tag"": ""Six_Days_on_the_Road"", ""delta"": ""13""}",[],0.010076
+bi17,128,"{""tag"": ""Everything_I_Love"", ""delta"": ""10""}",[],0.007308
+bi17,129,"{""tag"": ""Arab_Money"", ""delta"": ""16""}",[],0.006244
+bi17,130,"{""tag"": ""5to_Piso"", ""delta"": ""11""}",[],0.007481
+bi17,131,"{""tag"": ""Joyful_Rebellion"", ""delta"": ""13""}",[],0.004543
+bi17,132,"{""tag"": ""Light_at_the_End_of_the_World"", ""delta"": ""15""}",[],0.006819
+bi17,133,"{""tag"": ""Machine_Gun_Etiquette"", ""delta"": ""10""}",[],0.007101
+bi17,134,"{""tag"": ""Mainliner:_Wreckage_from_the_Past"", ""delta"": ""8""}",[],0.004747
+bi17,135,"{""tag"": ""If_This_World_Were_Mine"", ""delta"": ""10""}",[],0.006691
+bi17,136,"{""tag"": ""Dirt_Road_Anthem"", ""delta"": ""12""}",[],0.007418
+bi17,137,"{""tag"": ""Love_Is_Blindness"", ""delta"": ""12""}",[],0.007277
+bi17,138,"{""tag"": ""I_Wanna_Go"", ""delta"": ""9""}",[],0.006677
+bi17,139,"{""tag"": ""Lose_My_Mind"", ""delta"": ""12""}",[],0.007104
+bi17,140,"{""tag"": ""Each_Tear"", ""delta"": ""13""}",[],0.006996
+bi17,141,"{""tag"": ""Disarm"", ""delta"": ""13""}",[],0.005616
+bi17,142,"{""tag"": ""Baby_Can_I_Hold_You"", ""delta"": ""16""}",[],0.009091
+bi17,143,"{""tag"": ""AOI:_Bionix"", ""delta"": ""14""}","[{""person1.id"": 15393162790446, ""messageCount"": 1}, {""person1.id"": 21990232557851, ""messageCount"": 1}]",0.005702
+bi17,144,"{""tag"": ""Boonoonoonoos"", ""delta"": ""12""}",[],0.008255
+bi17,145,"{""tag"": ""Quest_for_Fire:_Firestarter,_Vol._1"", ""delta"": ""11""}",[],0.008667
+bi17,146,"{""tag"": ""From_the_Ashes"", ""delta"": ""10""}",[],0.008500
+bi17,147,"{""tag"": ""Beastie_Boys_Anthology:_The_Sounds_of_Science"", ""delta"": ""8""}","[{""person1.id"": 8478, ""messageCount"": 1}, {""person1.id"": 6597069768560, ""messageCount"": 1}, {""person1.id"": 10995116280029, ""messageCount"": 1}, {""person1.id"": 28587302326380, ""messageCount"": 1}, {""person1.id"": 35184372092078, ""messageCount"": 1}]",0.009287
+bi17,148,"{""tag"": ""This_Is_a_Call"", ""delta"": ""16""}",[],0.005618
+bi17,149,"{""tag"": ""Ice_in_the_Sun"", ""delta"": ""8""}",[],0.006390
+bi17,150,"{""tag"": ""Cities_in_Dust"", ""delta"": ""16""}",[],0.006027
+bi17,151,"{""tag"": ""Andriy_Medvedev"", ""delta"": ""13""}",[],0.006106
+bi17,152,"{""tag"": ""Freak_Like_Me"", ""delta"": ""12""}",[],0.004490
+bi17,153,"{""tag"": ""Lies_for_the_Liars"", ""delta"": ""9""}","[{""person1.id"": 28587302323643, ""messageCount"": 1}]",0.004528
+bi17,154,"{""tag"": ""The_Shape_of_Punk_to_Come"", ""delta"": ""9""}",[],0.007755
+bi17,155,"{""tag"": ""Start_Something"", ""delta"": ""14""}",[],0.006701
+bi17,156,"{""tag"": ""The_Good_Stuff"", ""delta"": ""14""}",[],0.007528
+bi17,157,"{""tag"": ""Red_Octopus"", ""delta"": ""10""}",[],59.574003
+bi17,158,"{""tag"": ""Blink_the_Brightest"", ""delta"": ""11""}","[{""person1.id"": 21990232564645, ""messageCount"": 1}]",0.004975
+bi17,159,"{""tag"": ""A_Kiss_in_the_Dreamhouse"", ""delta"": ""15""}",[],0.010897
+bi17,160,"{""tag"": ""Star_People"", ""delta"": ""10""}",[],0.007942
+bi17,161,"{""tag"": ""Heartbreak_Station"", ""delta"": ""13""}",[],0.025668
+bi17,162,"{""tag"": ""The_Kink_Kronikles"", ""delta"": ""12""}","[{""person1.id"": 21990232556814, ""messageCount"": 1}]",0.009504
+bi17,163,"{""tag"": ""Beautifully_Human:_Words_and_Sounds_Vol._2"", ""delta"": ""12""}",[],0.007762
+bi17,164,"{""tag"": ""Juke_Box_Hero"", ""delta"": ""14""}",[],0.006928
+bi17,165,"{""tag"": ""The_Real_Testament"", ""delta"": ""15""}",[],0.008291
+bi17,166,"{""tag"": ""Psalm_69:_The_Way_to_Succeed_and_the_Way_to_Suck_Eggs"", ""delta"": ""15""}","[{""person1.id"": 480, ""messageCount"": 1}]",0.007640
+bi17,167,"{""tag"": ""Last_Train_to_London"", ""delta"": ""9""}",[],0.008747
+bi17,168,"{""tag"": ""The_Burning_Red"", ""delta"": ""10""}",[],0.007081
+bi17,169,"{""tag"": ""Outta_Here"", ""delta"": ""8""}",[],0.004189
+bi17,170,"{""tag"": ""Faster_Kill_Pussycat"", ""delta"": ""15""}",[],0.008512
+bi17,171,"{""tag"": ""Love_Metal"", ""delta"": ""9""}",[],0.009314
+bi17,172,"{""tag"": ""Pull_Up_to_the_Bumper"", ""delta"": ""14""}",[],0.009823
+bi17,173,"{""tag"": ""Little_L"", ""delta"": ""9""}",[],0.009747
+bi17,174,"{""tag"": ""Chicago_16"", ""delta"": ""10""}",[],0.009405
+bi17,175,"{""tag"": ""My_Name_Is_Not_Susan"", ""delta"": ""15""}",[],0.007052
+bi17,176,"{""tag"": ""Still_Not_a_Player"", ""delta"": ""9""}",[],0.004501
+bi17,177,"{""tag"": ""El_Matador"", ""delta"": ""11""}",[],0.007005
+bi17,178,"{""tag"": ""Lay_All_Your_Love_on_Me"", ""delta"": ""8""}",[],0.006933
+bi17,179,"{""tag"": ""Having_a_Rave_Up"", ""delta"": ""15""}","[{""person1.id"": 1227, ""messageCount"": 1}, {""person1.id"": 9586, ""messageCount"": 1}]",0.007925
+bi17,180,"{""tag"": ""The_Hour_of_Reprisal"", ""delta"": ""9""}","[{""person1.id"": 3470, ""messageCount"": 1}]",0.009324
+bi17,181,"{""tag"": ""Greatest_Hits:_My_Prerogative"", ""delta"": ""14""}",[],0.006864
+bi17,182,"{""tag"": ""Faster/P.C.P."", ""delta"": ""16""}",[],0.007848
+bi17,183,"{""tag"": ""Ruby_Trax"", ""delta"": ""9""}","[{""person1.id"": 8849, ""messageCount"": 1}, {""person1.id"": 2199023262836, ""messageCount"": 1}, {""person1.id"": 19791209305923, ""messageCount"": 1}]",0.010551
+bi17,184,"{""tag"": ""In_the_Flesh?"", ""delta"": ""12""}",[],0.006748
+bi17,185,"{""tag"": ""Tres_Deseos"", ""delta"": ""12""}",[],0.005691
+bi17,186,"{""tag"": ""Looks_That_Kill"", ""delta"": ""12""}",[],0.006308
+bi17,187,"{""tag"": ""Sun_Is_Up"", ""delta"": ""11""}",[],0.007609
+bi17,188,"{""tag"": ""Hang_On_to_Yourself"", ""delta"": ""13""}",[],0.006584
+bi17,189,"{""tag"": ""So_Amazing:_An_All-Star_Tribute_to_Luther_Vandross"", ""delta"": ""8""}",[],0.006995
+bi17,190,"{""tag"": ""The_Meaning_of_Love"", ""delta"": ""14""}","[{""person1.id"": 6597069766956, ""messageCount"": 1}, {""person1.id"": 10995116285865, ""messageCount"": 1}]",0.008066
+bi17,191,"{""tag"": ""All_the_Way..._A_Decade_of_Song_&_Video"", ""delta"": ""14""}",[],0.007623
+bi17,192,"{""tag"": ""Like_a_Boy"", ""delta"": ""10""}",[],0.008029
+bi17,193,"{""tag"": ""Mikhail_Youzhny"", ""delta"": ""14""}",[],0.001477
+bi17,194,"{""tag"": ""ELO_2"", ""delta"": ""8""}",[],0.008397
+bi17,195,"{""tag"": ""Deep_Water_Slang_V2.0"", ""delta"": ""13""}",[],0.004091
+bi17,196,"{""tag"": ""Rap_Song"", ""delta"": ""9""}",[],0.009483
+bi17,197,"{""tag"": ""Cómplices"", ""delta"": ""14""}","[{""person1.id"": 6597069767602, ""messageCount"": 1}]",0.006607
+bi17,198,"{""tag"": ""Sexy_Can_I"", ""delta"": ""16""}","[{""person1.id"": 4398046514433, ""messageCount"": 1}, {""person1.id"": 4398046519825, ""messageCount"": 1}]",0.011175
+bi17,199,"{""tag"": ""Hair_of_the_Dog"", ""delta"": ""12""}",[],0.009032
+bi17,200,"{""tag"": ""Money_to_Blow"", ""delta"": ""8""}","[{""person1.id"": 6597069770934, ""messageCount"": 1}]",0.006580
+bi17,201,"{""tag"": ""Kalimba_de_Luna_–_16_Happy_Songs"", ""delta"": ""13""}",[],0.005936
+bi17,202,"{""tag"": ""Screaming_Bloody_Murder"", ""delta"": ""10""}",[],0.007427
+bi17,203,"{""tag"": ""Pig_Lib"", ""delta"": ""13""}",[],0.006966
+bi17,204,"{""tag"": ""I_Begin_to_Wonder"", ""delta"": ""9""}",[],0.008473
+bi17,205,"{""tag"": ""Game_Time"", ""delta"": ""16""}",[],0.005541
+bi17,206,"{""tag"": ""Pack_Up"", ""delta"": ""8""}","[{""person1.id"": 4398046519825, ""messageCount"": 1}, {""person1.id"": 8796093029276, ""messageCount"": 1}, {""person1.id"": 13194139534178, ""messageCount"": 1}]",0.008417
+bi17,207,"{""tag"": ""Bobby_Digital_in_Stereo"", ""delta"": ""8""}","[{""person1.id"": 3470, ""messageCount"": 1}]",0.008001
+bi17,208,"{""tag"": ""Sunshine_on_Leith"", ""delta"": ""11""}",[],0.006971
+bi17,209,"{""tag"": ""Kiss_Me_Thru_the_Phone"", ""delta"": ""8""}",[],0.009106
+bi17,210,"{""tag"": ""Finding_Beauty_in_Negative_Spaces"", ""delta"": ""11""}",[],59.597063
+bi17,211,"{""tag"": ""So_Much_to_Say"", ""delta"": ""8""}",[],0.008373
+bi17,212,"{""tag"": ""Maria_II_of_Portugal"", ""delta"": ""8""}",[],0.003328
+bi17,213,"{""tag"": ""A_Boy_Named_Goo"", ""delta"": ""12""}",[],0.004918
+bi17,214,"{""tag"": ""Celia_Cruz"", ""delta"": ""11""}",[],0.003700
+bi17,215,"{""tag"": ""Glass_Spider"", ""delta"": ""9""}",[],0.009048
+bi17,216,"{""tag"": ""Have_You_Ever_Loved_a_Woman"", ""delta"": ""16""}",[],0.007711
+bi17,217,"{""tag"": ""Fires_at_Midnight"", ""delta"": ""8""}",[],0.006957
+bi17,218,"{""tag"": ""What_About_Your_Friends"", ""delta"": ""10""}",[],0.007666
+bi17,219,"{""tag"": ""Brick_by_Brick"", ""delta"": ""13""}",[],0.006343
+bi17,220,"{""tag"": ""I_See_a_Star"", ""delta"": ""15""}",[],0.008737
+bi17,221,"{""tag"": ""The_Adventures_of_Grandmaster_Flash_on_the_Wheels_of_Steel"", ""delta"": ""9""}",[],0.005031
+bi17,222,"{""tag"": ""American_Made_Music_to_Strip_By"", ""delta"": ""10""}","[{""person1.id"": 24189255821139, ""messageCount"": 1}]",0.008358
+bi17,223,"{""tag"": ""H_to_He,_Who_Am_the_Only_One"", ""delta"": ""12""}",[],0.006896
+bi17,224,"{""tag"": ""Good_Morning_Revival"", ""delta"": ""16""}",[],0.008608
+bi17,225,"{""tag"": ""Do_You_Want_the_Truth_or_Something_Beautiful?"", ""delta"": ""13""}",[],0.009546
+bi17,226,"{""tag"": ""Songs_from_an_American_Movie,_Vol._1:_Learning_How_to_Smile"", ""delta"": ""10""}","[{""person1.id"": 4398046512930, ""messageCount"": 1}]",0.008268
+bi17,227,"{""tag"": ""Loud_Rocks"", ""delta"": ""13""}",[],0.004984
+bi17,228,"{""tag"": ""Money_Money"", ""delta"": ""9""}",[],0.005367
+bi17,229,"{""tag"": ""Cannot_Buy_My_Soul"", ""delta"": ""16""}",[],0.007902
+bi17,230,"{""tag"": ""The_Sufferer_&_the_Witness"", ""delta"": ""9""}",[],0.008527
+bi17,231,"{""tag"": ""Patrick_Pearse"", ""delta"": ""16""}",[],0.005995
+bi17,232,"{""tag"": ""Live_à_Paris"", ""delta"": ""10""}","[{""person1.id"": 21990232556347, ""messageCount"": 1}]",0.010421
+bi17,233,"{""tag"": ""Hawkwind_Anthology"", ""delta"": ""9""}",[],0.011548
+bi17,234,"{""tag"": ""Left_My_Heart_in_Tokyo"", ""delta"": ""16""}",[],0.006745
+bi17,235,"{""tag"": ""So_Pure"", ""delta"": ""16""}",[],0.006807
+bi17,236,"{""tag"": ""The_Happiest_Days_of_Our_Lives"", ""delta"": ""8""}",[],0.011585
+bi17,237,"{""tag"": ""Prison_Bound"", ""delta"": ""9""}",[],0.010366
+bi17,238,"{""tag"": ""Ross_Dependency"", ""delta"": ""10""}",[],0.005355
+bi17,239,"{""tag"": ""Disneymania_3"", ""delta"": ""14""}",[],0.006629
+bi17,240,"{""tag"": ""Ciara:_The_Evolution"", ""delta"": ""10""}",[],0.008000
+bi17,241,"{""tag"": ""Sea_Lion_Woman"", ""delta"": ""9""}",[],0.009264
+bi17,242,"{""tag"": ""Gone_Again"", ""delta"": ""13""}",[],0.007538
+bi17,243,"{""tag"": ""You_Better_You_Bet"", ""delta"": ""15""}",[],0.007711
+bi17,244,"{""tag"": ""Ooooooohhh..._On_the_TLC_Tip"", ""delta"": ""11""}",[],0.007373
+bi17,245,"{""tag"": ""Luv_Me,_Luv_Me"", ""delta"": ""10""}","[{""person1.id"": 26388279072674, ""messageCount"": 1}]",0.009837
+bi17,246,"{""tag"": ""Third/Sister_Lovers"", ""delta"": ""9""}","[{""person1.id"": 10995116284554, ""messageCount"": 1}]",0.006750
+bi17,247,"{""tag"": ""Crash_into_Me"", ""delta"": ""10""}",[],0.006972
+bi17,248,"{""tag"": ""Ostalo_je_ćutanje"", ""delta"": ""15""}",[],0.005916
+bi17,249,"{""tag"": ""Non-Stop_Erotic_Cabaret"", ""delta"": ""9""}",[],0.007545
+bi17,250,"{""tag"": ""AT&T_Team_USA_Soundtrack"", ""delta"": ""10""}","[{""person1.id"": 13194139539617, ""messageCount"": 1}, {""person1.id"": 24189255818641, ""messageCount"": 1}]",0.008420
+bi17,251,"{""tag"": ""See_You"", ""delta"": ""12""}",[],0.007112
+bi17,252,"{""tag"": ""Miss_Thang"", ""delta"": ""14""}",[],0.005541
+bi17,253,"{""tag"": ""6_Underground"", ""delta"": ""8""}",[],0.010051
+bi17,254,"{""tag"": ""Crunk_Rock"", ""delta"": ""9""}",[],0.006943
+bi17,255,"{""tag"": ""Cypress_Hill_IV"", ""delta"": ""10""}","[{""person1.id"": 2199023263440, ""messageCount"": 1}, {""person1.id"": 10995116279277, ""messageCount"": 1}, {""person1.id"": 10995116284819, ""messageCount"": 1}]",0.008932
+bi17,256,"{""tag"": ""Lady_in_Satin"", ""delta"": ""13""}",[],0.006835
+bi17,257,"{""tag"": ""The_Way_We_Walk,_Volume_Two:_The_Longs"", ""delta"": ""16""}",[],0.004385
+bi17,258,"{""tag"": ""Bang_and_Blame"", ""delta"": ""12""}",[],0.007322
+bi17,259,"{""tag"": ""En_händig_man"", ""delta"": ""12""}",[],0.008193
+bi17,260,"{""tag"": ""Electro-Shock_Blues"", ""delta"": ""14""}",[],0.009166
+bi17,261,"{""tag"": ""Que_Me_Quedes_Tú"", ""delta"": ""9""}",[],0.011581
+bi17,262,"{""tag"": ""Blame_It_on_Your_Heart"", ""delta"": ""14""}",[],0.007301
+bi17,263,"{""tag"": ""Elect_the_Dead"", ""delta"": ""10""}",[],59.606537
+bi17,264,"{""tag"": ""A_Better_Man"", ""delta"": ""9""}",[],0.007133
+bi17,265,"{""tag"": ""Se_me_olvidó_otra_vez"", ""delta"": ""15""}","[{""person1.id"": 2199023262172, ""messageCount"": 1}]",0.007757
+bi17,266,"{""tag"": ""Cold_Roses"", ""delta"": ""14""}",[],0.004455
+bi17,267,"{""tag"": ""If_I_Needed_You"", ""delta"": ""8""}",[],0.008721
+bi17,268,"{""tag"": ""Laid"", ""delta"": ""8""}",[],0.004683
+bi17,269,"{""tag"": ""Make_Me_Wanna_Die"", ""delta"": ""8""}",[],0.007200
+bi17,270,"{""tag"": ""How_Sweet_It_Is_to_Be_Loved_by_You"", ""delta"": ""10""}",[],0.005882
+bi17,271,"{""tag"": ""Same_Girl"", ""delta"": ""9""}",[],0.008028
+bi17,272,"{""tag"": ""Stone_Cold_Crazy"", ""delta"": ""15""}",[],0.006121
+bi17,273,"{""tag"": ""War_at_the_Warfield"", ""delta"": ""13""}",[],0.006584
+bi17,274,"{""tag"": ""Launched"", ""delta"": ""11""}",[],0.006277
+bi17,275,"{""tag"": ""When_Life_Gives_You_Lemons,_You_Paint_That_Shit_Gold"", ""delta"": ""9""}",[],0.006449
+bi17,276,"{""tag"": ""Forever_My_Lady"", ""delta"": ""16""}",[],0.007889
+bi17,277,"{""tag"": ""Red_Medicine"", ""delta"": ""14""}",[],0.005843
+bi17,278,"{""tag"": ""Good_to_Be_Bad"", ""delta"": ""11""}",[],0.006229
+bi17,279,"{""tag"": ""Hard_Times_and_Nursery_Rhymes"", ""delta"": ""14""}",[],0.008662
+bi17,280,"{""tag"": ""Gaya_confederacy"", ""delta"": ""15""}",[],0.009366
+bi17,281,"{""tag"": ""Give_It_to_You"", ""delta"": ""8""}",[],0.007962
+bi17,282,"{""tag"": ""Suffer_Well"", ""delta"": ""10""}",[],0.006586
+bi17,283,"{""tag"": ""Get_It_Shawty"", ""delta"": ""10""}","[{""person1.id"": 2199023265951, ""messageCount"": 1}]",0.007385
+bi17,284,"{""tag"": ""Een_beetje"", ""delta"": ""16""}",[],0.007909
+bi17,285,"{""tag"": ""They_Only_Come_Out_at_Night"", ""delta"": ""12""}",[],0.007656
+bi17,286,"{""tag"": ""An_American_Prayer"", ""delta"": ""9""}",[],0.005007
+bi17,287,"{""tag"": ""From_the_Screen_to_Your_Stereo"", ""delta"": ""13""}",[],0.006879
+bi17,288,"{""tag"": ""The_Bootleg_Series_Vol._6:_Bob_Dylan_Live_1964,_Concert_at_Philharmonic_Hall"", ""delta"": ""14""}",[],0.006711
+bi17,289,"{""tag"": ""I_Need_a_Dollar"", ""delta"": ""9""}",[],0.006756
+bi17,290,"{""tag"": ""T.A.T.u._Remixes"", ""delta"": ""11""}",[],0.008780
+bi17,291,"{""tag"": ""Trampled_Under_Foot"", ""delta"": ""15""}",[],0.005666
+bi17,292,"{""tag"": ""Kissing_to_Be_Clever"", ""delta"": ""8""}",[],0.010206
+bi17,293,"{""tag"": ""Soul_Meets_Body"", ""delta"": ""13""}",[],0.005869
+bi17,294,"{""tag"": ""In_a_Major_Way"", ""delta"": ""15""}","[{""person1.id"": 8796093032397, ""messageCount"": 1}]",0.009549
+bi17,295,"{""tag"": ""Heartbeat_City"", ""delta"": ""11""}",[],0.007117
+bi17,296,"{""tag"": ""Candy-O"", ""delta"": ""15""}",[],0.009503
+bi17,297,"{""tag"": ""Rock_until_You_Drop"", ""delta"": ""8""}",[],0.007050
+bi17,298,"{""tag"": ""A_Million_to_One"", ""delta"": ""15""}",[],0.004146
+bi17,299,"{""tag"": ""But_You_Know_I_Love_You"", ""delta"": ""15""}",[],0.006194
+bi17,300,"{""tag"": ""Made_You_Look"", ""delta"": ""8""}",[],0.007319
+bi17,301,"{""tag"": ""My_Babe"", ""delta"": ""15""}",[],0.007429
+bi17,302,"{""tag"": ""The_National_Anthem"", ""delta"": ""15""}",[],0.005853
+bi17,303,"{""tag"": ""Valley_of_the_Damned"", ""delta"": ""8""}",[],0.009028
+bi17,304,"{""tag"": ""Speak_No_Evil"", ""delta"": ""9""}",[],0.006338
+bi17,305,"{""tag"": ""Alfredo_Di_Stéfano"", ""delta"": ""16""}",[],0.004972
+bi17,306,"{""tag"": ""Boogie_Oogie_Oogie"", ""delta"": ""11""}",[],0.009347
+bi17,307,"{""tag"": ""Good_for_Your_Soul"", ""delta"": ""9""}",[],0.006823
+bi17,308,"{""tag"": ""Music_Is_My_Savior"", ""delta"": ""11""}","[{""person1.id"": 2199023256518, ""messageCount"": 1}, {""person1.id"": 24189255821023, ""messageCount"": 1}]",0.006656
+bi17,309,"{""tag"": ""Music_Has_the_Right_to_Children"", ""delta"": ""15""}","[{""person1.id"": 15393162792385, ""messageCount"": 1}]",0.005008
+bi17,310,"{""tag"": ""All_She_Wants_Is"", ""delta"": ""9""}",[],0.006581
+bi17,311,"{""tag"": ""The_Revölution_by_Night"", ""delta"": ""10""}",[],0.007109
+bi17,312,"{""tag"": ""Alphabet_St."", ""delta"": ""15""}",[],0.005437
+bi17,313,"{""tag"": ""A_Northern_Soul"", ""delta"": ""9""}",[],0.006102
+bi17,314,"{""tag"": ""Gett_Off"", ""delta"": ""16""}",[],0.008502
+bi17,315,"{""tag"": ""Another_Body_Murdered"", ""delta"": ""8""}",[],0.005389
+bi17,316,"{""tag"": ""Dream,_After_Dream"", ""delta"": ""8""}","[{""person1.id"": 4398046519825, ""messageCount"": 1}]",0.008408
+bi17,317,"{""tag"": ""Live_in_Las_Vegas:_A_New_Day..."", ""delta"": ""11""}",[],59.626175
+bi17,318,"{""tag"": ""ISouljaBoyTellem"", ""delta"": ""10""}",[],0.007605
+bi17,319,"{""tag"": ""Man_of_Colours"", ""delta"": ""16""}",[],0.005472
+bi17,320,"{""tag"": ""Riddle_Box"", ""delta"": ""15""}",[],0.006863
+bi17,321,"{""tag"": ""Blue_for_You"", ""delta"": ""10""}",[],0.007664
+bi17,322,"{""tag"": ""Frank_Herbert"", ""delta"": ""12""}",[],0.004025
+bi17,323,"{""tag"": ""Venus_and_Mars/Rock_Show"", ""delta"": ""10""}","[{""person1.id"": 17592186053943, ""messageCount"": 1}]",0.011476
+bi17,324,"{""tag"": ""Music_of_the_Katamari_Damacy_series"", ""delta"": ""9""}",[],0.006891
+bi17,325,"{""tag"": ""I_Am_a_Bird_Now"", ""delta"": ""12""}",[],0.008830
+bi17,326,"{""tag"": ""Patsy_Cline_Showcase"", ""delta"": ""13""}",[],0.006840
+bi17,327,"{""tag"": ""From_Chaos"", ""delta"": ""11""}",[],0.008937
+bi17,328,"{""tag"": ""Bony_Moronie"", ""delta"": ""16""}",[],0.008636
+bi17,329,"{""tag"": ""Join_Hands"", ""delta"": ""16""}",[],0.009230
+bi17,330,"{""tag"": ""Nada_Sōsō"", ""delta"": ""16""}",[],0.005202
+bi17,331,"{""tag"": ""Gambling_with_the_Devil"", ""delta"": ""10""}",[],0.008600
+bi17,332,"{""tag"": ""Carnival_of_Carnage"", ""delta"": ""8""}",[],0.007774
+bi17,333,"{""tag"": ""The_Modern_World"", ""delta"": ""9""}",[],0.005697
+bi17,334,"{""tag"": ""Jefferson_Airplane_Takes_Off"", ""delta"": ""14""}",[],0.009251
+bi17,335,"{""tag"": ""Beautiful_Freak"", ""delta"": ""9""}",[],0.006876
+bi17,336,"{""tag"": ""Perverted_by_Language"", ""delta"": ""15""}",[],0.004642
+bi17,337,"{""tag"": ""The_Giancana_Story"", ""delta"": ""9""}","[{""person1.id"": 4398046513491, ""messageCount"": 1}]",0.010870
+bi17,338,"{""tag"": ""This_Is_Home"", ""delta"": ""8""}",[],0.006293
+bi17,339,"{""tag"": ""Dreamers"", ""delta"": ""8""}",[],0.007480
+bi17,340,"{""tag"": ""Ella_Abraça_Jobim"", ""delta"": ""15""}","[{""person1.id"": 4398046515963, ""messageCount"": 1}]",0.006281
+bi17,341,"{""tag"": ""Beat_of_My_Heart"", ""delta"": ""9""}",[],0.007368
+bi17,342,"{""tag"": ""New_Found_Power"", ""delta"": ""8""}",[],0.009708
+bi17,343,"{""tag"": ""Bounce_with_Me"", ""delta"": ""11""}","[{""person1.id"": 13194139533461, ""messageCount"": 1}]",0.008291
+bi17,344,"{""tag"": ""In_My_Time"", ""delta"": ""15""}",[],0.007979
+bi17,345,"{""tag"": ""Just_a_Rolling_Stone"", ""delta"": ""8""}",[],0.007536
+bi17,346,"{""tag"": ""Then_You_Can_Tell_Me_Goodbye"", ""delta"": ""11""}",[],0.007305
+bi17,347,"{""tag"": ""Better_Than_Raw"", ""delta"": ""11""}",[],0.007837
+bi17,348,"{""tag"": ""The_Sidewinder"", ""delta"": ""8""}",[],0.005916
+bi17,349,"{""tag"": ""The_Eyes_of_Alice_Cooper"", ""delta"": ""14""}","[{""person1.id"": 10995116284554, ""messageCount"": 1}]",0.006592
+bi17,350,"{""tag"": ""Jesus_Christ_Pose"", ""delta"": ""11""}",[],0.007945
+bi17,351,"{""tag"": ""Nothing_to_Fear"", ""delta"": ""13""}","[{""person1.id"": 21990232561767, ""messageCount"": 1}]",0.010945
+bi17,352,"{""tag"": ""The_Best_of_The_Byrds:_Greatest_Hits,_Volume_II"", ""delta"": ""11""}",[],0.006966
+bi17,353,"{""tag"": ""Time_for_Annihilation"", ""delta"": ""10""}",[],0.008580
+bi17,354,"{""tag"": ""What_Will_the_Neighbours_Say?"", ""delta"": ""15""}",[],0.010011
+bi17,355,"{""tag"": ""Last_Cup_of_Sorrow"", ""delta"": ""13""}","[{""person1.id"": 13194139533461, ""messageCount"": 1}, {""person1.id"": 21990232556470, ""messageCount"": 1}]",0.007358
+bi17,356,"{""tag"": ""Wherever_I_May_Roam"", ""delta"": ""10""}","[{""person1.id"": 21990232557614, ""messageCount"": 1}]",0.011007
+bi17,357,"{""tag"": ""Da_Da_Da"", ""delta"": ""9""}",[],0.008898
+bi17,358,"{""tag"": ""La_Llave_de_Mi_Corazón"", ""delta"": ""13""}",[],0.010037
+bi17,359,"{""tag"": ""Libra_Scale"", ""delta"": ""10""}",[],0.011126
+bi17,360,"{""tag"": ""Worlds_Collide"", ""delta"": ""16""}","[{""person1.id"": 3470, ""messageCount"": 1}, {""person1.id"": 10995116278585, ""messageCount"": 1}]",0.008710
+bi17,361,"{""tag"": ""Elegantly_Wasted"", ""delta"": ""14""}",[],0.010127
+bi17,362,"{""tag"": ""Club_Disco"", ""delta"": ""10""}",[],0.006763
+bi17,363,"{""tag"": ""Earache_My_Eye"", ""delta"": ""9""}",[],0.006921
+bi17,364,"{""tag"": ""A_Year_and_a_Half_in_the_Life_of_Metallica"", ""delta"": ""13""}",[],0.004947
+bi17,365,"{""tag"": ""Eminem_Presents:_The_Re-Up"", ""delta"": ""9""}",[],0.007077
+bi17,366,"{""tag"": ""Made_to_Be_Broken"", ""delta"": ""15""}",[],0.007651
+bi17,367,"{""tag"": ""2000_Light_Years_from_Home"", ""delta"": ""10""}",[],0.006722
+bi17,368,"{""tag"": ""Rock_and_a_Hard_Place"", ""delta"": ""16""}",[],0.006454
+bi17,369,"{""tag"": ""Fixed_at_Zero"", ""delta"": ""9""}",[],0.006594
+bi17,370,"{""tag"": ""This_Is_a_Long_Drive_for_Someone_with_Nothing_to_Think_About"", ""delta"": ""9""}",[],59.576604
+bi17,371,"{""tag"": ""Third_Stage"", ""delta"": ""12""}",[],0.008923
+bi17,372,"{""tag"": ""Drumming_Song"", ""delta"": ""13""}",[],0.007487
+bi17,373,"{""tag"": ""Lick_It_Up"", ""delta"": ""8""}","[{""person1.id"": 1024, ""messageCount"": 1}]",0.007959
+bi17,374,"{""tag"": ""Cupid_&_Psyche_85"", ""delta"": ""13""}","[{""person1.id"": 8796093031783, ""messageCount"": 1}]",0.007014
+bi17,375,"{""tag"": ""Horse_Rotorvator"", ""delta"": ""14""}",[],0.006487
+bi17,376,"{""tag"": ""Every_Girl"", ""delta"": ""16""}","[{""person1.id"": 2199023260994, ""messageCount"": 1}, {""person1.id"": 2199023261193, ""messageCount"": 1}]",0.008496
+bi17,377,"{""tag"": ""On_a_Clear_Night"", ""delta"": ""15""}",[],0.007059
+bi17,378,"{""tag"": ""Black_Mountain_Side"", ""delta"": ""8""}",[],0.004933
+bi17,379,"{""tag"": ""Hunting_High_and_Low"", ""delta"": ""16""}","[{""person1.id"": 2239, ""messageCount"": 1}, {""person1.id"": 6597069771972, ""messageCount"": 1}, {""person1.id"": 8796093032271, ""messageCount"": 1}, {""person1.id"": 19791209305990, ""messageCount"": 1}]",0.006237
+bi17,380,"{""tag"": ""Disney_Channel_Holiday"", ""delta"": ""15""}",[],0.006674
+bi17,381,"{""tag"": ""Savage_Amusement"", ""delta"": ""16""}",[],0.008649
+bi17,382,"{""tag"": ""Live_at_the_Witch_Trials"", ""delta"": ""8""}",[],0.007911
+bi17,383,"{""tag"": ""Feel_It_Boy"", ""delta"": ""12""}",[],0.006205
+bi17,384,"{""tag"": ""Dancemania_Speed_Best_2001"", ""delta"": ""9""}",[],0.006767
+bi17,385,"{""tag"": ""Distant_Sun"", ""delta"": ""15""}","[{""person1.id"": 21990232561902, ""messageCount"": 1}]",0.006697
+bi17,386,"{""tag"": ""The_Singles_81→85"", ""delta"": ""12""}",[],0.006273
+bi17,387,"{""tag"": ""At_the_Ryman"", ""delta"": ""13""}",[],0.008391
+bi17,388,"{""tag"": ""Heart_to_Yours"", ""delta"": ""13""}",[],0.004606
+bi17,389,"{""tag"": ""Seventh_Tree"", ""delta"": ""12""}",[],0.004992
+bi17,390,"{""tag"": ""Golden_Heart"", ""delta"": ""16""}","[{""person1.id"": 4398046516386, ""messageCount"": 1}]",0.011085
+bi17,391,"{""tag"": ""D.O.D."", ""delta"": ""10""}",[],0.006746
+bi17,392,"{""tag"": ""Fly_to_the_Rainbow"", ""delta"": ""8""}",[],0.007770
+bi17,393,"{""tag"": ""1000_Hurts"", ""delta"": ""11""}",[],0.007976
+bi17,394,"{""tag"": ""Little_Sparrow"", ""delta"": ""8""}",[],0.005557
+bi17,395,"{""tag"": ""Iconos"", ""delta"": ""15""}",[],0.007772
+bi17,396,"{""tag"": ""Shortie_Like_Mine"", ""delta"": ""13""}",[],0.006575
+bi17,397,"{""tag"": ""Death_on_the_Road"", ""delta"": ""10""}",[],0.006394
+bi17,398,"{""tag"": ""Sure_Shot"", ""delta"": ""14""}",[],0.008044
+bi17,399,"{""tag"": ""Bucketheadland"", ""delta"": ""9""}",[],0.008799
+bi17,400,"{""tag"": ""Me_So_Horny"", ""delta"": ""9""}",[],0.006342
