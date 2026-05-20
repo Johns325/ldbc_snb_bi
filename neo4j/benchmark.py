@@ -5,7 +5,7 @@ import os
 import csv
 import datetime
 import neo4j
-from queries import run_queries, run_precomputations
+from queries import run_queries, run_all_parameters_per_query_file, run_precomputations
 from pathlib import Path
 from itertools import cycle
 import argparse
@@ -63,6 +63,8 @@ if __name__ == '__main__':
     parser.add_argument('--validate', action='store_true', help='Validation mode', required=False)
     parser.add_argument('--pgtuning', action='store_true', help='Paramgen tuning execution: 100 queries/batch', required=False)
     parser.add_argument('--queries', action='store_true', help='Only run queries', required=False)
+    parser.add_argument('--parameter_dir', type=str, help='Directory with bi-*.csv query parameter files', required=False)
+    parser.add_argument('--all_parameters_per_query_file', action='store_true', help='Run every parameter row and write one result file per query variant', required=False)
     args = parser.parse_args()
     sf = args.scale_factor
     test = args.test
@@ -70,13 +72,21 @@ if __name__ == '__main__':
     data_dir = args.data_dir 
     queries_only = args.queries
     validate = args.validate
+    parameter_dir = args.parameter_dir or f'../parameters/parameters-sf{sf}'
+    all_parameters_per_query_file = args.all_parameters_per_query_file
 
     print(f"- Input data directory: {data_dir}")
+    print(f"- Parameter directory: {parameter_dir}")
 
     parameter_csvs = {}
     for query_variant in query_variants:
-        # wrap parameters into infinite loop iterator
-        parameter_csvs[query_variant] = cycle(csv.DictReader(open(f'../parameters/parameters-sf{sf}/bi-{query_variant}.csv'), delimiter='|'))
+        parameter_file = f'{parameter_dir}/bi-{query_variant}.csv'
+        if all_parameters_per_query_file:
+            with open(parameter_file, "r") as parameter_csv_file:
+                parameter_csvs[query_variant] = list(csv.DictReader(parameter_csv_file, delimiter='|'))
+        else:
+            # wrap parameters into infinite loop iterator
+            parameter_csvs[query_variant] = cycle(csv.DictReader(open(parameter_file), delimiter='|'))
 
     # to ensure that all inserted edges have their endpoints at the time of their insertion, we insert nodes first and edges second
     insert_nodes = ["Comment", "Forum", "Person", "Post"]
@@ -118,7 +128,10 @@ if __name__ == '__main__':
     if queries_only:
         batch_type = "power"
         run_precomputations(sf, query_variants, session, batch_date, batch_type, timings_file)
-        reads_time = run_queries(query_variants, parameter_csvs, session, sf, batch_date, batch_type, test, pgtuning, timings_file, results_file)
+        if all_parameters_per_query_file:
+            reads_time = run_all_parameters_per_query_file(query_variants, parameter_csvs, session, sf, batch_date, batch_type, timings_file, output)
+        else:
+            reads_time = run_queries(query_variants, parameter_csvs, session, sf, batch_date, batch_type, test, pgtuning, timings_file, results_file)
     else:
         # Run alternating write-read blocks.
         # The first write-read block is the power batch, while the rest are the throughput batches.

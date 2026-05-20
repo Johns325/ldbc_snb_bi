@@ -3,6 +3,7 @@ import time
 import re
 import json
 import sys
+import csv
 sys.path.append('../common')
 from result_mapping import result_mapping
 
@@ -118,6 +119,41 @@ def run_queries(query_variants, parameter_csvs, session, sf, batch_id, batch_typ
             # - paramgen tuning: 100 queries
             if (test) or (not pgtuning and i == 30) or (pgtuning and i == 100):
                 break
+
+    return time.time() - start
+
+
+def run_all_parameters_per_query_file(query_variants, parameter_csvs, session, sf, batch_id, batch_type, timings_file, output_dir):
+    start = time.time()
+
+    for query_variant in query_variants:
+        query_num = int(re.sub("[^0-9]", "", query_variant))
+        query_subvariant = re.sub("[^ab]", "", query_variant)
+
+        print(f"========================= Q {query_num:02d}{query_subvariant.rjust(1)} =========================")
+        query_file = open(f'queries/bi-{query_num}.cypher', 'r')
+        query_spec = query_file.read()
+        query_file.close()
+
+        results_path = output_dir / f"bi{query_variant}-results.csv"
+        with open(results_path, "w", newline="", encoding="utf-8") as per_query_results_file:
+            writer = csv.writer(per_query_results_file)
+            writer.writerow(["query", "parameter_index", "parameters", "results", "time_seconds"])
+
+            for i, query_parameters in enumerate(parameter_csvs[query_variant], start=1):
+                query_parameters_converted = {k.split(":")[0]: cast_parameter_to_driver_input(v, k.split(":")[1]) for k, v in query_parameters.items()}
+
+                query_parameters_split = {k.split(":")[0]: v for k, v in query_parameters.items()}
+                query_parameters_in_order = json.dumps(query_parameters_split, ensure_ascii=False)
+
+                print(f"Q{query_variant} parameter #{i}: {query_parameters_split}")
+                (results, duration) = run_query(session, query_num, query_variant, query_spec, query_parameters_converted, False)
+
+                timings_file.write(f"Neo4j|{sf}|{batch_id}|{batch_type}|{query_variant}|{query_parameters_in_order}|{duration}\n")
+                timings_file.flush()
+                writer.writerow([f"bi{query_variant}", i, query_parameters_in_order, results, f"{duration:.6f}"])
+
+        print(f"Wrote {results_path}")
 
     return time.time() - start
 
