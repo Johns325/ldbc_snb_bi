@@ -8,4 +8,4 @@ cd ..
 
 . scripts/vars.sh
 
-"${NEO4J_PYTHON}" benchmark.py --queries --scale_factor "${SF}" --data_dir "${NEO4J_CSV_DIR}" "$@"
+"${NEO4J_PYTHON}" benchmark.py --queries --scale_factor "${SF}" --data_dir "${NEO4J_CSV_DIR}" --bolt_uri "bolt://localhost:${NEO4J_BOLT_PORT}" "$@"

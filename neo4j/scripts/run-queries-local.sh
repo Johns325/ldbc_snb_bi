@@ -32,6 +32,8 @@ Options:
                       Run every parameter row and write bi*-results.csv files.
   --memory SIZE        Set both Neo4j heap max and page cache, e.g. 20G.
   --worker-threads N   Set Neo4j server.threads.worker_count for container start.
+  --http-port PORT     Host HTTP port for Neo4j Browser. Default: 7474.
+  --bolt-port PORT     Host Bolt port for benchmark queries. Default: 7687.
   --install-deps       Install Python dependencies used by the Neo4j benchmark.
   -h, --help           Show this help.
 
@@ -107,6 +109,14 @@ while [[ $# -gt 0 ]]; do
             export NEO4J_ENV_VARS="${NEO4J_ENV_VARS-} --env NEO4J_server_threads_worker__count=$2"
             shift 2
             ;;
+        --http-port)
+            export NEO4J_HTTP_PORT="$2"
+            shift 2
+            ;;
+        --bolt-port)
+            export NEO4J_BOLT_PORT="$2"
+            shift 2
+            ;;
         --install-deps)
             install_deps=true
             shift
@@ -165,6 +175,8 @@ echo "Neo4j LDBC SNB BI query run"
 echo "  SF: ${SF}"
 echo "  CSV: ${NEO4J_CSV_DIR}"
 echo "  parameters: ${PARAMETER_DIR}"
+echo "  HTTP port: ${NEO4J_HTTP_PORT}"
+echo "  Bolt port: ${NEO4J_BOLT_PORT}"
 echo "  load: ${load}"
 echo "  start: ${start}"
 echo

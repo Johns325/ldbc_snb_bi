@@ -33,6 +33,8 @@ Options:
   --no-prepare-csv     Do not auto-remove CSV headers before import.
   --memory SIZE        Set both Neo4j heap max and page cache, e.g. 20G.
   --worker-threads N   Set Neo4j server.threads.worker_count for container start.
+  --http-port PORT     Host HTTP port for Neo4j Browser. Default: 7474.
+  --bolt-port PORT     Host Bolt port for benchmark queries. Default: 7687.
   --python PATH        Python executable for the Neo4j benchmark driver.
   --neo4j-version VER  Neo4j Docker image version. Default: 5.20.0.
   --mode MODE          test, regular, pgtuning, or all-parameters.
@@ -188,6 +190,8 @@ DRY_RUN=false
 PREPARE_CSV=true
 MEMORY=""
 WORKER_THREADS=""
+HTTP_PORT=""
+BOLT_PORT=""
 PYTHON_BIN=""
 PARAMETER_COUNT=""
 export NEO4J_VERSION="${NEO4J_VERSION:-5.20.0}"
@@ -230,6 +234,14 @@ while [[ $# -gt 0 ]]; do
             ;;
         --worker-threads)
             WORKER_THREADS="$2"
+            shift 2
+            ;;
+        --http-port)
+            HTTP_PORT="$2"
+            shift 2
+            ;;
+        --bolt-port)
+            BOLT_PORT="$2"
             shift 2
             ;;
         --python)
@@ -369,6 +381,14 @@ if [[ -n "${WORKER_THREADS}" ]]; then
     run_args+=(--worker-threads "${WORKER_THREADS}")
 fi
 
+if [[ -n "${HTTP_PORT}" ]]; then
+    run_args+=(--http-port "${HTTP_PORT}")
+fi
+
+if [[ -n "${BOLT_PORT}" ]]; then
+    run_args+=(--bolt-port "${BOLT_PORT}")
+fi
+
 if [[ -n "${PARAMETER_COUNT}" ]]; then
     run_args+=(--parameter-limit "${PARAMETER_COUNT}")
 fi
@@ -403,6 +423,8 @@ echo "  Query variants: ${QUERY_VARIANTS[*]}"
 echo "  Mode: ${MODE}"
 echo "  Parameter count: ${PARAMETER_COUNT:-default}"
 echo "  Worker threads: ${WORKER_THREADS:-default}"
+echo "  HTTP port: ${HTTP_PORT:-7474}"
+echo "  Bolt port: ${BOLT_PORT:-7687}"
 echo "  Load: ${LOAD}"
 echo
 

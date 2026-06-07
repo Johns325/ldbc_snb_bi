@@ -15,8 +15,8 @@ fi
 
 docker run --rm \
     --user="$(id -u):$(id -g)" \
-    --publish=7474:7474 \
-    --publish=7687:7687 \
+    --publish=${NEO4J_HTTP_PORT}:7474 \
+    --publish=${NEO4J_BOLT_PORT}:7687 \
     --detach \
     --ulimit nofile=40000:40000 \
     ${NEO4J_ENV_VARS} \
@@ -37,3 +37,5 @@ until docker exec --interactive --tty ${NEO4J_CONTAINER_NAME} cypher-shell "RETU
 done
 echo
 echo "Database started."
+echo "Browser: http://localhost:${NEO4J_HTTP_PORT}"
+echo "Bolt: bolt://localhost:${NEO4J_BOLT_PORT}"

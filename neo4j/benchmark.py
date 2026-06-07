@@ -77,12 +77,10 @@ def run_batch_updates(session, data_dir, batch_date, batch_type, insert_entities
 
 
 if __name__ == '__main__':
-    driver = neo4j.GraphDatabase.driver("bolt://localhost:7687")
-    session = driver.session()
-
     parser = argparse.ArgumentParser()
     parser.add_argument('--scale_factor', type=str, help='Scale factor', required=True)
     parser.add_argument('--data_dir', type=str, help='Directory with the initial_snapshot, insert, and delete directories', required=True)
+    parser.add_argument('--bolt_uri', type=str, help='Neo4j Bolt URI', default='bolt://localhost:7687', required=False)
     parser.add_argument('--test', action='store_true', help='Test execution: 1 query/batch', required=False)
     parser.add_argument('--validate', action='store_true', help='Validation mode', required=False)
     parser.add_argument('--pgtuning', action='store_true', help='Paramgen tuning execution: 100 queries/batch', required=False)
@@ -92,6 +90,8 @@ if __name__ == '__main__':
     parser.add_argument('--parameter_limit', type=int, help='Maximum number of parameter rows to run per query variant', required=False)
     parser.add_argument('--all_parameters_per_query_file', action='store_true', help='Run every parameter row and write one result file per query variant', required=False)
     args = parser.parse_args()
+    driver = neo4j.GraphDatabase.driver(args.bolt_uri)
+    session = driver.session()
     sf = args.scale_factor
     test = args.test
     pgtuning = args.pgtuning
@@ -106,6 +106,7 @@ if __name__ == '__main__':
         raise ValueError("--parameter_limit must be a positive integer")
 
     print(f"- Input data directory: {data_dir}")
+    print(f"- Bolt URI: {args.bolt_uri}")
     print(f"- Parameter directory: {parameter_dir}")
     print(f"- Query variants: {', '.join(query_variants)}")
     print(f"- Parameter limit: {parameter_limit if parameter_limit is not None else 'default'}")
