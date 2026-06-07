@@ -11,6 +11,32 @@ from itertools import cycle
 import argparse
 
 
+DEFAULT_QUERY_VARIANTS = ["1", "2a", "2b", "3", "4", "5", "6", "7", "8a", "8b", "9", "10a", "10b", "11", "12", "13", "14a", "14b", "15a", "15b", "16a", "16b", "17", "18", "19a", "19b", "20a", "20b"]
+
+
+def query_base_variant(query_variant):
+    return query_variant.split("-")[0]
+
+
+def parse_query_variants(value):
+    if not value:
+        return DEFAULT_QUERY_VARIANTS
+    return [variant.strip() for variant in value.replace(",", " ").split() if variant.strip()]
+
+
+def resolve_parameter_file(parameter_dir, query_variant):
+    exact_path = Path(parameter_dir) / f"bi-{query_variant}.csv"
+    if exact_path.exists():
+        return exact_path
+
+    base_variant = query_base_variant(query_variant)
+    base_path = Path(parameter_dir) / f"bi-{base_variant}.csv"
+    if base_path.exists():
+        return base_path
+
+    raise FileNotFoundError(f"Missing parameter file for {query_variant}: tried {exact_path} and {base_path}")
+
+
 def write_batch_fun(tx, query_spec, batch, csv_file):
     result = tx.run(query_spec, batch=batch, csv_file=csv_file)
     return result.value()
@@ -51,8 +77,6 @@ def run_batch_updates(session, data_dir, batch_date, batch_type, insert_entities
 
 
 if __name__ == '__main__':
-    query_variants = ["1", "2a", "2b", "3", "4", "5", "6", "7", "8a", "8b", "9", "10a", "10b", "11", "12", "13", "14a", "14b", "15a", "15b", "16a", "16b", "17", "18", "19a", "19b", "20a", "20b"]
-
     driver = neo4j.GraphDatabase.driver("bolt://localhost:7687")
     session = driver.session()
 
@@ -64,6 +88,8 @@ if __name__ == '__main__':
     parser.add_argument('--pgtuning', action='store_true', help='Paramgen tuning execution: 100 queries/batch', required=False)
     parser.add_argument('--queries', action='store_true', help='Only run queries', required=False)
     parser.add_argument('--parameter_dir', type=str, help='Directory with bi-*.csv query parameter files', required=False)
+    parser.add_argument('--query_variants', type=str, help='Comma- or space-separated query variants to run, e.g. "1,15a-without-date,19b-without-precomputation"', required=False)
+    parser.add_argument('--parameter_limit', type=int, help='Maximum number of parameter rows to run per query variant', required=False)
     parser.add_argument('--all_parameters_per_query_file', action='store_true', help='Run every parameter row and write one result file per query variant', required=False)
     args = parser.parse_args()
     sf = args.scale_factor
@@ -74,13 +100,20 @@ if __name__ == '__main__':
     validate = args.validate
     parameter_dir = args.parameter_dir or f'../parameters/parameters-sf{sf}'
     all_parameters_per_query_file = args.all_parameters_per_query_file
+    query_variants = parse_query_variants(args.query_variants)
+    parameter_limit = args.parameter_limit
+    if parameter_limit is not None and parameter_limit <= 0:
+        raise ValueError("--parameter_limit must be a positive integer")
 
     print(f"- Input data directory: {data_dir}")
     print(f"- Parameter directory: {parameter_dir}")
+    print(f"- Query variants: {', '.join(query_variants)}")
+    print(f"- Parameter limit: {parameter_limit if parameter_limit is not None else 'default'}")
 
     parameter_csvs = {}
     for query_variant in query_variants:
-        parameter_file = f'{parameter_dir}/bi-{query_variant}.csv'
+        parameter_file = resolve_parameter_file(parameter_dir, query_variant)
+        print(f"- Parameters for {query_variant}: {parameter_file}")
         if all_parameters_per_query_file:
             with open(parameter_file, "r") as parameter_csv_file:
                 parameter_csvs[query_variant] = list(csv.DictReader(parameter_csv_file, delimiter='|'))
@@ -112,10 +145,13 @@ if __name__ == '__main__':
     output.mkdir(parents=True, exist_ok=True)
     open(f"output/output-sf{sf}/results.csv", "w").close()
     open(f"output/output-sf{sf}/timings.csv", "w").close()
+    open(f"output/output-sf{sf}/query-summary.csv", "w").close()
 
     results_file = open(f"output/output-sf{sf}/results.csv", "a")
     timings_file = open(f"output/output-sf{sf}/timings.csv", "a")
+    summary_file = open(f"output/output-sf{sf}/query-summary.csv", "a")
     timings_file.write(f"tool|sf|day|batch_type|q|parameters|time\n")
+    summary_file.write("query|count|total_ms|avg_ms|min_ms|max_ms\n")
 
     network_start_date = datetime.date(2012, 11, 29)
     network_end_date = datetime.date(2013, 1, 1)
@@ -129,9 +165,9 @@ if __name__ == '__main__':
         batch_type = "power"
         run_precomputations(sf, query_variants, session, batch_date, batch_type, timings_file)
         if all_parameters_per_query_file:
-            reads_time = run_all_parameters_per_query_file(query_variants, parameter_csvs, session, sf, batch_date, batch_type, timings_file, output)
+            reads_time = run_all_parameters_per_query_file(query_variants, parameter_csvs, session, sf, batch_date, batch_type, timings_file, summary_file, output, parameter_limit)
         else:
-            reads_time = run_queries(query_variants, parameter_csvs, session, sf, batch_date, batch_type, test, pgtuning, timings_file, results_file)
+            reads_time = run_queries(query_variants, parameter_csvs, session, sf, batch_date, batch_type, test, pgtuning, timings_file, results_file, summary_file, parameter_limit)
     else:
         # Run alternating write-read blocks.
         # The first write-read block is the power batch, while the rest are the throughput batches.
@@ -153,7 +189,7 @@ if __name__ == '__main__':
             run_batch_updates(session, data_dir, batch_date, batch_type, insert_entities, delete_entities, insert_queries, delete_queries)
             run_precomputations(sf, query_variants, session, batch_date, batch_type, timings_file)
 
-            reads_time = run_queries(query_variants, parameter_csvs, session, sf, batch_date, batch_type, test, pgtuning, timings_file, results_file)
+            reads_time = run_queries(query_variants, parameter_csvs, session, sf, batch_date, batch_type, test, pgtuning, timings_file, results_file, summary_file, parameter_limit)
             timings_file.write(f"Neo4j|{sf}|{batch_date}|{batch_type}|reads||{reads_time:.6f}\n")
 
             # checking if 1 hour (and a bit) has elapsed for the throughput batches
@@ -178,3 +214,4 @@ if __name__ == '__main__':
 
     results_file.close()
     timings_file.close()
+    summary_file.close()

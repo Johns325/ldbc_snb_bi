@@ -8,6 +8,32 @@ sys.path.append('../common')
 from result_mapping import result_mapping
 
 
+def query_base_variant(query_variant):
+    return query_variant.split("-")[0]
+
+
+def query_number(query_variant):
+    return int(re.sub("[^0-9]", "", query_base_variant(query_variant)))
+
+
+def query_subvariant(query_variant):
+    return re.sub("[^ab]", "", query_base_variant(query_variant))
+
+
+def query_file_name(query_variant):
+    query_num = query_number(query_variant)
+    if query_num == 15 and "without-date" in query_variant:
+        return "queries/bi-15-without-date.cypher"
+    if query_num == 19 and "without-precomputation" in query_variant:
+        return "queries/bi-19-without-precomputation.cypher"
+    return f"queries/bi-{query_num}.cypher"
+
+
+def read_query_spec(query_variant):
+    with open(query_file_name(query_variant), "r") as query_file:
+        return query_file.read()
+
+
 def convert_value_to_string(value, result_type, input):
     if result_type == "ID[]" or result_type == "INT[]" or result_type == "INT32[]" or result_type == "INT64[]":
         return [int(x) for x in value]
@@ -84,21 +110,44 @@ def run_query(session, query_num, query_variant, query_spec, query_parameters, t
     return (results, duration)
 
 
-def run_queries(query_variants, parameter_csvs, session, sf, batch_id, batch_type, test, pgtuning, timings_file, results_file):
+def write_summary(summary_file, query_variant, durations):
+    if not durations:
+        return
+
+    durations_ms = [duration * 1000 for duration in durations]
+    total = sum(durations_ms)
+    count = len(durations)
+    avg = total / count
+    summary_file.write(
+        f"{query_variant}|{count}|{total:.3f}|{avg:.3f}|{min(durations_ms):.3f}|{max(durations_ms):.3f}\n"
+    )
+    summary_file.flush()
+    print(
+        f"Summary Q{query_variant}: count = {count} , avg = {avg:.3f} ms, "
+        f"min = {min(durations_ms):.3f} ms, max = {max(durations_ms):.3f} ms"
+    )
+
+
+def should_stop_after_parameter(i, test, pgtuning, parameter_limit):
+    if parameter_limit is not None:
+        return i >= parameter_limit
+    return (test) or (not pgtuning and i == 30) or (pgtuning and i == 100)
+
+
+def run_queries(query_variants, parameter_csvs, session, sf, batch_id, batch_type, test, pgtuning, timings_file, results_file, summary_file, parameter_limit=None):
     start = time.time()
 
     for query_variant in query_variants:
-        query_num = int(re.sub("[^0-9]", "", query_variant))
-        query_subvariant = re.sub("[^ab]", "", query_variant)
+        query_num = query_number(query_variant)
+        subvariant = query_subvariant(query_variant)
 
-        print(f"========================= Q {query_num:02d}{query_subvariant.rjust(1)} =========================")
-        query_file = open(f'queries/bi-{query_num}.cypher', 'r')
-        query_spec = query_file.read()
-        query_file.close()
+        print(f"========================= Q {query_num:02d}{subvariant.rjust(1)} =========================")
+        query_spec = read_query_spec(query_variant)
 
         parameters_csv = parameter_csvs[query_variant]
 
         i = 0
+        durations = []
         for query_parameters in parameters_csv:
             i = i + 1
 
@@ -108,38 +157,37 @@ def run_queries(query_variants, parameter_csvs, session, sf, batch_id, batch_typ
             query_parameters_in_order = json.dumps(query_parameters_split)
 
             (results, duration) = run_query(session, query_num, query_variant, query_spec, query_parameters_converted, test)
+            durations.append(duration)
 
             timings_file.write(f"Neo4j|{sf}|{batch_id}|{batch_type}|{query_variant}|{query_parameters_in_order}|{duration}\n")
             timings_file.flush()
             results_file.write(f"{query_num}|{query_variant}|{query_parameters_in_order}|{results}\n")
             results_file.flush()
 
-            # - test run: 1 query
-            # - regular run: 30 queries
-            # - paramgen tuning: 100 queries
-            if (test) or (not pgtuning and i == 30) or (pgtuning and i == 100):
+            if should_stop_after_parameter(i, test, pgtuning, parameter_limit):
                 break
+
+        write_summary(summary_file, query_variant, durations)
 
     return time.time() - start
 
 
-def run_all_parameters_per_query_file(query_variants, parameter_csvs, session, sf, batch_id, batch_type, timings_file, output_dir):
+def run_all_parameters_per_query_file(query_variants, parameter_csvs, session, sf, batch_id, batch_type, timings_file, summary_file, output_dir, parameter_limit=None):
     start = time.time()
 
     for query_variant in query_variants:
-        query_num = int(re.sub("[^0-9]", "", query_variant))
-        query_subvariant = re.sub("[^ab]", "", query_variant)
+        query_num = query_number(query_variant)
+        subvariant = query_subvariant(query_variant)
 
-        print(f"========================= Q {query_num:02d}{query_subvariant.rjust(1)} =========================")
-        query_file = open(f'queries/bi-{query_num}.cypher', 'r')
-        query_spec = query_file.read()
-        query_file.close()
+        print(f"========================= Q {query_num:02d}{subvariant.rjust(1)} =========================")
+        query_spec = read_query_spec(query_variant)
 
         results_path = output_dir / f"bi{query_variant}-results.csv"
         with open(results_path, "w", newline="", encoding="utf-8") as per_query_results_file:
             writer = csv.writer(per_query_results_file)
             writer.writerow(["query", "parameter_index", "parameters", "results", "time_seconds"])
 
+            durations = []
             for i, query_parameters in enumerate(parameter_csvs[query_variant], start=1):
                 query_parameters_converted = {k.split(":")[0]: cast_parameter_to_driver_input(v, k.split(":")[1]) for k, v in query_parameters.items()}
 
@@ -148,18 +196,23 @@ def run_all_parameters_per_query_file(query_variants, parameter_csvs, session, s
 
                 print(f"Q{query_variant} parameter #{i}: {query_parameters_split}")
                 (results, duration) = run_query(session, query_num, query_variant, query_spec, query_parameters_converted, False)
+                durations.append(duration)
 
                 timings_file.write(f"Neo4j|{sf}|{batch_id}|{batch_type}|{query_variant}|{query_parameters_in_order}|{duration}\n")
                 timings_file.flush()
                 writer.writerow([f"bi{query_variant}", i, query_parameters_in_order, results, f"{duration:.6f}"])
 
+                if parameter_limit is not None and i >= parameter_limit:
+                    break
+
         print(f"Wrote {results_path}")
+        write_summary(summary_file, query_variant, durations)
 
     return time.time() - start
 
 
 def run_precomputations(sf, query_variants, session, batch_date, batch_type, timings_file):
-    if "19a" in query_variants or "19b" in query_variants:
+    if any(query_base_variant(variant) in ("19a", "19b") and "without-precomputation" not in variant for variant in query_variants):
         start = time.time()
         print("Creating graph (precomputing weights) for Q19")
         session.write_transaction(write_query_fun, open(f'queries/bi-19-drop-graph.cypher', 'r').read())
@@ -168,7 +221,7 @@ def run_precomputations(sf, query_variants, session, batch_date, batch_type, tim
         duration = end - start
         timings_file.write(f"Neo4j|{sf}|{batch_date}|{batch_type}|q19precomputation||{duration}\n")
 
-    if "20a" in query_variants or "20b" in query_variants:
+    if any(query_base_variant(variant) in ("20a", "20b") for variant in query_variants):
         start = time.time()
         print("Creating graph (precomputing weights) for Q20")
         session.write_transaction(write_query_fun, open(f'queries/bi-20-drop-graph.cypher', 'r').read())

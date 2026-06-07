@@ -10,4 +10,4 @@ cd ..
 
 NEO4J_PACKAGE_VERSION=5.21.0
 
-pip3 install --user neo4j==${NEO4J_PACKAGE_VERSION} python-dateutil
+"${NEO4J_PYTHON}" -m pip install --user neo4j==${NEO4J_PACKAGE_VERSION} python-dateutil

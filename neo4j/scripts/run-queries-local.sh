@@ -24,9 +24,14 @@ Options:
   --validate           Pass --validate to benchmark.py.
   --pgtuning           Pass --pgtuning to benchmark.py: 100 parameter rows per query.
   --parameter-dir PATH Directory containing bi-*.csv query parameters.
+  --query-variants LIST
+                      Comma- or space-separated variants, e.g.
+                      "1,15a-without-date,19a-without-precomputation".
+  --parameter-limit N Maximum number of parameter rows per query variant.
   --all-parameters-per-query-file
                       Run every parameter row and write bi*-results.csv files.
   --memory SIZE        Set both Neo4j heap max and page cache, e.g. 20G.
+  --worker-threads N   Set Neo4j server.threads.worker_count for container start.
   --install-deps       Install Python dependencies used by the Neo4j benchmark.
   -h, --help           Show this help.
 
@@ -78,6 +83,14 @@ while [[ $# -gt 0 ]]; do
             query_args+=("$1")
             shift
             ;;
+        --query-variants)
+            query_args+=("--query_variants" "$2")
+            shift 2
+            ;;
+        --parameter-limit)
+            query_args+=("--parameter_limit" "$2")
+            shift 2
+            ;;
         --parameter-dir)
             PARAMETER_DIR="$2"
             shift 2
@@ -88,6 +101,10 @@ while [[ $# -gt 0 ]]; do
             ;;
         --memory)
             export NEO4J_ENV_VARS="${NEO4J_ENV_VARS-} --env NEO4J_dbms_memory_pagecache_size=$2 --env NEO4J_dbms_memory_heap_max__size=$2"
+            shift 2
+            ;;
+        --worker-threads)
+            export NEO4J_ENV_VARS="${NEO4J_ENV_VARS-} --env NEO4J_server_threads_worker__count=$2"
             shift 2
             ;;
         --install-deps)
