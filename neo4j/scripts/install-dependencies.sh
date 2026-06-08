@@ -8,6 +8,6 @@ cd ..
 
 . scripts/vars.sh
 
-NEO4J_PACKAGE_VERSION=5.21.0
+NEO4J_PACKAGE_VERSION=5.20.0
 
 "${NEO4J_PYTHON}" -m pip install --user neo4j==${NEO4J_PACKAGE_VERSION} python-dateutil

@@ -355,7 +355,7 @@ fi
 if [[ "${DRY_RUN}" == false && "${INSTALL_DEPS}" == false ]]; then
     if ! python_has_benchmark_deps "${NEO4J_PYTHON}"; then
         echo "Missing Python benchmark dependencies. Re-run with --install-deps."
-        echo "The repository installer will run: ${NEO4J_PYTHON} -m pip install --user neo4j==5.21.0 python-dateutil"
+        echo "The repository installer will run: ${NEO4J_PYTHON} -m pip install --user neo4j==5.20.0 python-dateutil"
         echo "Or pass --python PATH to a Python environment that already has neo4j and python-dateutil."
         exit 1
     fi
